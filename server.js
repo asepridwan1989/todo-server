@@ -22,7 +22,7 @@ mongoose.connect(`mongodb://${userdb}:${passdb}@ds157320.mlab.com:57320/todo-fan
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended:false }))
-app.use(morgan('dev'))
+// app.use(morgan('dev'))
 
 const db = mongoose.connection
 db.on('error',console.error.bind(console,'connection to db error:'))
